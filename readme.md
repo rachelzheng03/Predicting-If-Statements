@@ -80,7 +80,7 @@ The trained model will be saved to the folder `final_model`.
 * The models I trained can be found at the following link: https://drive.google.com/drive/folders/1mTk6JjVpMJL2dtr4QHe-jNcHCQiOdsH7?usp=drive_link
 
 ## **4. Evaluating the Model**
-The model was evaluated on how well it predicted if statements using methods in `ft_test_masked.csv` using the following metrics: CodeBLEU, BLEU-4, and exact match.
+The model was evaluated on how well it predicted if statements using the methods in `ft_test_masked.csv`. The following metrics wer used: CodeBLEU, BLEU-4, and exact match.
 
 (1) Making the predictions:
 
