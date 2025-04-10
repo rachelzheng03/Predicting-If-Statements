@@ -3,13 +3,13 @@
 * [1 Introduction](#1-introduction)  
 * [2 Getting Started](#2-getting-started)  
   * [2.1 Preparations](#21-preparations)  
-  * [2.2 OPTIONAL Prep]()  
-* [3 Training the Model]() 
-  * [3.1 Option 1: Using Google Colab]()
-  * [3.2 Option 2: Using the Command Line]()
-  * [3.3 Some Extra Notes]()
-* [4 Evaluating the Model]()
-* [5 Report]()
+  * [2.2 OPTIONAL Prep](#22-optional-prep)  
+* [3 Training the Model](#3-training-the-model) 
+  * [3.1 Option 1: Using Google Colab](#31-option-1-using-google-colab)
+  * [3.2 Option 2: Using the Command Line](#32-option-2-using-the-command-line)
+  * [3.3 Some Extra Notes](#33-some-extra-notes)
+* [4 Evaluating the Model](#4-evaluating-the-model)
+* [5 Report](#5-report)
 ---
 
 ## **1. Introduction** 
