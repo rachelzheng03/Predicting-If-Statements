@@ -45,7 +45,7 @@ tokenizer = RobertaTokenizer.from_pretrained(model_checkpoint)
 
 # add tokens <MASK> and <TAB> 
 tokenizer.add_tokens(["<MASK>"]) 
-#tokenizer.add_tokens(["<TAB>"]) # uncomment for inputs with <TAB> token
+tokenizer.add_tokens(["<TAB>"]) # comment out for inputs with NO <TAB> token
 
 model.resize_token_embeddings(len(tokenizer))
 
@@ -56,8 +56,8 @@ model.resize_token_embeddings(len(tokenizer))
 
 print("STARTING STEP 4")
 def preprocess_function(examples):
-    # inputs = examples["masked_with_tab"]  # uncomment for inputs with <TAB> token
-    inputs = examples["masked_no_tab"] 
+    inputs = examples["masked_with_tab"]
+    # inputs = examples["masked_no_tab"] 
     targets = examples["target_block"]
 
     # tokenize the inputs
