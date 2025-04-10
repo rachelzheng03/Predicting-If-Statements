@@ -77,7 +77,7 @@ The trained model will be saved to the folder `final_model`.
 
 * For both options, the files are currently set to train for inputs with the \<TAB\> token. I have also provided the code to train for inputs without the \<TAB\> token, but these are commented out. This will also apply in section 4.
 
-* The models I trained can be found at the following link: 
+* The models I trained can be found at the following link: https://drive.google.com/drive/folders/1mTk6JjVpMJL2dtr4QHe-jNcHCQiOdsH7?usp=drive_link
 
 ## **4. Evaluating the Model**
 The model was evaluated on how well it predicted if statements using methods in `ft_test_masked.csv` using the following metrics: CodeBLEU, BLEU-4, and exact match.
@@ -89,6 +89,8 @@ Run the notebook `get_predictions.ipynb` in Google Colab. Make sure to upload th
 (2) Calculating the metrics:
 
 Run the notebook `evaluate_model.ipynb` in Google Colab. Make sure to upload the .csv file from the previous step to the file section of Colab before running any of the cells.
+
+The evaluation results can be found in the files `testset-results.csv` and `testset-results_no_tab.csv`. `testset-results.csv` contains the results for the model trained on inputs with the \<TAB\> token.
 
 ## **5. Report**
 The assignment report is available in the file Assignment_Report.pdf.
