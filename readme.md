@@ -14,7 +14,7 @@
 
 ## **1. Introduction** 
 This project builds a model that predicts if
-statements in Python methods. The model will take as input a function containing a special token (\<MASK\>) masking a single if condition and will attempt to predict it. We use CodeT5, a pre-trained encoder-decoder Transformer model, designed for code understanding and generation and fine-tune it for the purpose of predicting if statements.
+statements in Python methods. The model will take as input a function containing a special token (\<MASK\>) masking a single if condition and will attempt to predict it. We use CodeT5, a pre-trained encoder-decoder Transformer model designed for code understanding and generation and fine-tune it for the purpose of predicting if statements.
 
 ---
 
