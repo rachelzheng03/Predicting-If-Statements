@@ -5,12 +5,16 @@
   * [2.1 Preparations](#21-preparations)  
   * [2.2 OPTIONAL Prep]()  
 * [3 Training the Model]() 
-
+  * [3.1 Option 1: Using Google Colab]()
+  * [3.2 Option 2: Using the Command Line]()
+  * [3.3 Some Extra Notes]()
+* [4 Evaluating the Model]()
+* [5 Report]()
 ---
 
 ## **1. Introduction** 
 This project builds a model that predicts if
-statement in Python methods. The model will take as input a function containing a special token (\<MASK\>) masking a single if condition and will attempt to predict it. We use CodeT5, a pre-trained encoder-decoder Transformer model, designed for code understanding and generation and fine-tune it for the purpose of predicting if statements.
+statements in Python methods. The model will take as input a function containing a special token (\<MASK\>) masking a single if condition and will attempt to predict it. We use CodeT5, a pre-trained encoder-decoder Transformer model, designed for code understanding and generation and fine-tune it for the purpose of predicting if statements.
 
 ---
 
@@ -63,7 +67,7 @@ To deactivate the virtual environment, use the command:
 
 Run the notebook `train_model.ipynb` in Google Colab. Make sure to upload the files `ft_train_masked.csv`, `ft_valid_masked.csv`, and `ft_test_masked.csv` to the file section of Colab before running any of the cells. After the training is finished, download `final_model.zip`.
 
-### **3.2 Option 2: Using the command line**
+### **3.2 Option 2: Using the Command Line**
 ```
 (venv) ~/ $ python train_model.py
 ```
@@ -79,9 +83,11 @@ The trained model will be saved to the folder `final_model`.
 The model was evaluated on how well it predicted if statements using methods in `ft_test_masked.csv` using the following metrics: CodeBLEU, BLEU-4, and exact match.
 
 (1) Making the predictions:
+
 Run the notebook `get_predictions.ipynb` in Google Colab. Make sure to upload the final model as a zip file to the file section of Colab before running any of the cells and to download the .csv file at the end. The .csv file will be needed to calculate the metrics.
 
 (2) Calculating the metrics:
+
 Run the notebook `evaluate_model.ipynb` in Google Colab. Make sure to upload the .csv file from the previous step to the file section of Colab before running any of the cells.
 
 ## **5. Report**
